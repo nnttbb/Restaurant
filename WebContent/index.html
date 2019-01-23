@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Restaurant Recommendation">
+    <meta name="author" content="Ntb">
+    <title>Restaurant Recommendation</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header class="top-header">
+
+    <span id="welcome-msg"></span>
+    <a id="logout-link" href="logout">Logout</a>
+    <a id="signup-link">Sign Up</a>
+</header>
+
+<div class="container">
+    <section class="main-section">
+    <div id="login-form">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <button id="login-btn">Login</button>
+        <p id="login-error"></p>
+      </div>
+      
+      <div id="signUp-form">
+        <label for="input_username">Username:</label>
+        <input id="input_username" name="input_username" type="text">
+        <br>
+        <label for="input_password">Password:</label>
+        <input id="input_password" name="input_password" type="password">
+        <br>
+        <label for="firstName">First Name:</label>
+        <input id="firstName" name="firstName" type="text">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" name="lastName" type="text">
+        <button id="signUp-btn">Sign Up</button>
+      
+      </div>
+
+        <div id="item-nav">
+
+            <nav class="main-nav">
+                <a href="#" id="nearby-btn" class="main-nav-btn active">
+                    <i class="fa fa-map-marker"></i> Restaurants Nearby You
+                </a>
+                <a href="#" id="fav-btn" class="main-nav-btn">
+                    <i class="fa fa-heart"></i> Your Favorites
+                </a>
+                <a href="#" id="recommend-btn" class="main-nav-btn">
+                    <i class="fa fa-thumbs-up"></i> Recommendations for You
+                </a>
+            </nav>
+        </div>
+
+        <ul id="item-list">
+        <li class="item">
+        
+          <div>
+            <a class="item-name" href="#"></a>
+            <p class="item-category"></p>
+            <div class="stars">
+             <!--  <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i> -->
+            </div>
+          </div>
+          <p class="item-address"><br/><br/></p>
+          <div class="fav-link">
+            <i class="fa fa-heart"></i>
+          </div>
+        </li>
+      </ul>
+    </section>
+</div>
+
+<footer>
+    <p>Background picture form unsplash.com
+</footer>
+<script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+<script type="text/javascript"></script>
+ <script src="scripts/main.js"></script>
+</body>
+</html>
